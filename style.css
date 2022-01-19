@@ -25,14 +25,16 @@ body{
   margin:auto;
   margin-top: 60px;
 }
-.main
-{
+.glass{
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.glass.main
+{
   width: 500px;
   height: 560px;
   align-items: center;
@@ -40,18 +42,12 @@ body{
   text-align: center;
   vertical-align: middle;
 }
-.img{
+.glass.img{
   position:absolute;
   width: 180px;
   height: 175px;
   top:5%;
   left:165px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 25%;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .name{
   margin-top:39%;
@@ -59,13 +55,7 @@ body{
   font-size: 30px;
   font-weight: 600;
 }
-.sub-name{
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.glass.sub-name{
   width: 240px;
   height: 30px;
   justify-content: center;
@@ -90,6 +80,7 @@ body{
   font-size: 15px;
   color: #f2f2f2;
   border-radius: 16px;
+  transition: all 0.1s ease;
   font-weight:  600;
 }
 .input:hover{
@@ -103,14 +94,11 @@ body{
   padding:10px 20px;
   font-size: 15px;
   color: #00a3cc;
+  transition: all 0.1s ease;
   font-weight:  600;
 }
-.bubble1{
+.bubble{
   position: absolute;
-  width: 180px;
-  height: 175px;
-  top:-8%;
-  left:850px;
   transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
@@ -118,63 +106,47 @@ body{
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.bubble.bubble1{
+  width: 180px;
+  height: 175px;
+  top:-8%;
+  left:850px;
 }
 .bubble1:hover{
   transition: all 0.3s ease;
   width: 200px;
   height: 195px;
 }
-.bubble2{
-  position:absolute;
+.bubble.bubble2{
   width: 380px;
   height: 375px;
   top:63%;
   left:185px;
-  transition: all 0.3s ease;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .bubble2:hover{
-  width: 420px;
-  height: 415px;
+  width: 430px;
+  height: 425px;
   transition: all 0.3s ease;
 }
-.bubble3{
+.bubble.bubble3{
   position:fixed;
   width: 580px;
   height: 575px;
   top:-30%;
   left:-350px;
-  transition: all 0.3s ease;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .bubble3:hover{
   width: 620px;
   height: 615px;
   transition: all 0.3s ease;
 }
-.bubble4{
+.bubble.bubble4{
   position:fixed;
   width: 580px;
   height: 575px;
   top:35%;
   left:1060px;
-  transition: all 0.3s ease;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .bubble4:hover{
   width: 610px;
@@ -193,14 +165,8 @@ body{
     margin:auto;
     margin-top: 20px;
   }
-  .main
+  .glass.main
   {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
     width: 400px;
     height: 560px;
     align-items: center;
@@ -208,18 +174,12 @@ body{
     text-align: center;
     vertical-align: middle;
   }
-  .img{
+  .glass.img{
     position:absolute;
     width: 150px;
     height: 150px;
     top:3%;
     left:130px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 25%;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
   }
   .name{
     margin-top:41%;
@@ -227,13 +187,7 @@ body{
     font-size: 24px;
     font-weight: 600;
   }
-  .sub-name{
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  .glass.sub-name{
     width: 210px;
     height: 30px;
     justify-content: center;
@@ -273,38 +227,25 @@ body{
     color: #00a3cc;
     font-weight:  600;
   }
-  .bubble1{
+
+  .bubble.bubble1{
     position: absolute;
     width: 280px;
     height: 275px;
     top:-15%;
     left:-80px;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
   }
   .bubble1:hover{
     width: 300px;
     height: 295px;
     transition: all 0.3s ease;
   }
-  .bubble2{
+  .bubble.bubble2{
     position:absolute;
     width: 380px;
     height: 375px;
     top:63%;
     left:185px;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
   }
   .bubble2:hover{
     top:60%;
