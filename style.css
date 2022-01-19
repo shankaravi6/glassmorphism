@@ -40,13 +40,26 @@ body{
   text-align: center;
   vertical-align: middle;
 }
-.head{
+.img{
+  position:absolute;
+  width: 180px;
+  height: 175px;
+  top:5%;
+  left:165px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 25%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.name{
   margin-top:39%;
   margin-left:15px;
   font-size: 30px;
   font-weight: 600;
 }
-.name{
+.sub-name{
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -61,73 +74,6 @@ body{
   color:#262626;
   font-size: 22px;
   font-weight: 500;
-}
-
-.box{
-  position: absolute;
-  width: 180px;
-  height: 175px;
-  top:-8%;
-  left:850px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-.box2{
-  position:absolute;
-  width: 380px;
-  height: 375px;
-  top:63%;
-  left:185px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.img{
-  position:absolute;
-  width: 180px;
-  height: 175px;
-  top:5%;
-  left:165px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 25%;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-.box3{
-  position:fixed;
-  width: 580px;
-  height: 575px;
-  top:-30%;
-  left:-350px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-.box4{
-  position:fixed;
-  width: 580px;
-  height: 575px;
-  top:35%;
-  left:1060px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .para{
   text-align: justify;
@@ -159,6 +105,84 @@ body{
   color: #00a3cc;
   font-weight:  600;
 }
+.bubble1{
+  position: absolute;
+  width: 180px;
+  height: 175px;
+  top:-8%;
+  left:850px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.bubble1:hover{
+  transition: all 0.3s ease;
+  width: 200px;
+  height: 195px;
+}
+.bubble2{
+  position:absolute;
+  width: 380px;
+  height: 375px;
+  top:63%;
+  left:185px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.bubble2:hover{
+  width: 420px;
+  height: 415px;
+  transition: all 0.3s ease;
+}
+.bubble3{
+  position:fixed;
+  width: 580px;
+  height: 575px;
+  top:-30%;
+  left:-350px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.bubble3:hover{
+  width: 620px;
+  height: 615px;
+  transition: all 0.3s ease;
+}
+.bubble4{
+  position:fixed;
+  width: 580px;
+  height: 575px;
+  top:35%;
+  left:1060px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.bubble4:hover{
+  width: 610px;
+  height: 605px;
+  left: 1020px;
+  transition: all 0.3s ease;
+}
+
 
 
 @media screen and (max-width:970px) {
@@ -197,13 +221,13 @@ body{
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
-  .head{
+  .name{
     margin-top:41%;
     margin-left:10px;
     font-size: 24px;
     font-weight: 600;
   }
-  .name{
+  .sub-name{
     background: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -218,41 +242,6 @@ body{
     color:#262626;
     font-size: 22px;
     font-weight: 500;
-  }
-
-  .box{
-    position: absolute;
-    width: 280px;
-    height: 275px;
-    top:-15%;
-    left:-80px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  .box2{
-    position:absolute;
-    width: 380px;
-    height: 375px;
-    top:63%;
-    left:185px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-
-
-  .box3{
-    display: none;
-  }
-  .box4{
-display: none;
   }
   .para{
     text-align: justify;
@@ -284,5 +273,51 @@ display: none;
     color: #00a3cc;
     font-weight:  600;
   }
+  .bubble1{
+    position: absolute;
+    width: 280px;
+    height: 275px;
+    top:-15%;
+    left:-80px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .bubble1:hover{
+    width: 300px;
+    height: 295px;
+    transition: all 0.3s ease;
+  }
+  .bubble2{
+    position:absolute;
+    width: 380px;
+    height: 375px;
+    top:63%;
+    left:185px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .bubble2:hover{
+    top:60%;
+    width: 420px;
+    height: 415px;
+    transition: all 0.3s ease;
+  }
+  .bubble3{
+    display: none;
+  }
+  .bubble4{
+    display: none;
+  }
+
 
 }
