@@ -262,3 +262,11 @@ body{
 
 
 }
+@media screen and (max-width:480px) {
+  .container{
+    margin-top: 80px;
+  }
+  .bubble1, .bubble2, .bubble3, .bubble4{
+    display: none;
+  }
+}
